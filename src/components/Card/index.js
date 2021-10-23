@@ -1,14 +1,11 @@
-import {ListItem, ListImage, Desc} from './styledComponents'
-
 const Card = props => {
-  const {details} = props
-  const {name, imageUrl} = details
-
+  const {list} = props
+  const {name, imageUrl} = list
   return (
-    <ListItem>
-      <ListImage src={imageUrl} alt={name} />
-      <Desc>{name}</Desc>
-    </ListItem>
+    <li>
+      <img src={imageUrl} alt={name} />
+      <p>{name}</p>
+    </li>
   )
 }
 

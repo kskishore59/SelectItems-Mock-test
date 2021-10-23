@@ -76,3 +76,7 @@ export const ItemsList = styled.ul`
   flex-wrap: wrap;
   width: 80%;
 `
+
+export const Options = styled.option`
+  color: black;
+`
